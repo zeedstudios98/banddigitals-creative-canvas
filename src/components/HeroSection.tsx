@@ -43,7 +43,7 @@ const HeroSection: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-6">
             <span className="inline-block px-4 py-2 rounded-full bg-brand-lavender/10 dark:bg-brand-lavender/20 text-brand-navy dark:text-brand-lavender text-sm font-medium animate-fade-in">
-              Award-Winning Creative Agency
+              Freelance Designer & Developer since 2022
             </span>
           </div>
           
@@ -51,11 +51,11 @@ const HeroSection: React.FC = () => {
             ref={headingRef}
             className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6"
           >
-            Let's Create Something Amazing
+            Creating Digital Experiences That Stand Out
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-            We craft digital experiences that elevate brands and inspire audiences through thoughtful design and strategic innovation.
+            I craft websites, branding, and content that elevate your online presence and connect with your audience.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.7s' }}>
@@ -63,7 +63,7 @@ const HeroSection: React.FC = () => {
               Start a Project <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button variant="outline" className="border-2 text-lg py-6 px-8 rounded-full">
-              Explore Our Work
+              View My Work
             </Button>
           </div>
         </div>

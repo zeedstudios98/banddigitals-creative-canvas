@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Moon, Sun, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Menu, X, Moon, Sun, Instagram, Facebook, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -64,9 +64,11 @@ const Navigation = () => {
       <div className="container-custom flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <span className="font-serif font-bold text-2xl">
-            Band<span className="text-brand-lavender">Digitals</span>
-          </span>
+          <img 
+            src="/lovable-uploads/cb46f468-82b0-4d5a-aaf1-b24493f425f6.png" 
+            alt="BandDigitals Logo" 
+            className="h-10 mr-2"
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -116,9 +118,11 @@ const Navigation = () => {
             <div className="h-full flex flex-col p-6">
               <div className="flex justify-between items-center mb-8">
                 <Link to="/" className="flex items-center" onClick={() => setMobileMenuOpen(false)}>
-                  <span className="font-serif font-bold text-2xl">
-                    Band<span className="text-brand-lavender">Digitals</span>
-                  </span>
+                  <img 
+                    src="/lovable-uploads/cb46f468-82b0-4d5a-aaf1-b24493f425f6.png" 
+                    alt="BandDigitals Logo" 
+                    className="h-8 mr-2"
+                  />
                 </Link>
                 <Button
                   variant="ghost"
@@ -149,13 +153,13 @@ const Navigation = () => {
                 </Button>
                 
                 <div className="flex justify-center mt-8 space-x-6">
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-lavender transition-colors" aria-label="Instagram">
+                  <a href="https://instagram.com/banddigitals" target="_blank" rel="noopener noreferrer" className="hover:text-brand-lavender transition-colors" aria-label="Instagram">
                     <Instagram size={22} />
                   </a>
-                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-lavender transition-colors" aria-label="Twitter">
-                    <Twitter size={22} />
+                  <a href="https://facebook.com/saheedzeed" target="_blank" rel="noopener noreferrer" className="hover:text-brand-lavender transition-colors" aria-label="Facebook">
+                    <Facebook size={22} />
                   </a>
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-lavender transition-colors" aria-label="LinkedIn">
+                  <a href="https://www.linkedin.com/in/saheed-ajisola" target="_blank" rel="noopener noreferrer" className="hover:text-brand-lavender transition-colors" aria-label="LinkedIn">
                     <Linkedin size={22} />
                   </a>
                 </div>

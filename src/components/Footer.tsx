@@ -13,12 +13,14 @@ const Footer: React.FC = () => {
           {/* Brand column */}
           <div className="space-y-6">
             <Link to="/" className="flex items-center">
-              <span className="font-serif font-bold text-2xl">
-                Band<span className="text-brand-lavender">Digitals</span>
-              </span>
+              <img 
+                src="/lovable-uploads/cb46f468-82b0-4d5a-aaf1-b24493f425f6.png" 
+                alt="BandDigitals Logo" 
+                className="h-10 mr-2 bg-white rounded-md p-1"
+              />
             </Link>
             <p className="text-gray-400 text-sm">
-              We craft digital experiences that elevate brands and inspire audiences through thoughtful design and strategic innovation.
+              I craft digital experiences that elevate brands and inspire audiences through thoughtful design and strategic innovation.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -101,9 +103,9 @@ const Footer: React.FC = () => {
 
           {/* Newsletter */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Subscribe to Our Newsletter</h3>
+            <h3 className="font-bold text-lg mb-4">Get In Touch</h3>
             <p className="text-gray-400 text-sm mb-4">
-              Stay updated with our latest insights, trends, and news in creative design.
+              Have a project in mind? Send me a message and let's create something amazing together.
             </p>
             <div className="space-y-3">
               <div className="flex">
@@ -117,7 +119,7 @@ const Footer: React.FC = () => {
                 </Button>
               </div>
               <p className="text-gray-500 text-xs">
-                By subscribing, you agree to our Privacy Policy and consent to receive updates.
+                I respect your privacy. Your information will never be shared.
               </p>
             </div>
           </div>
@@ -135,9 +137,6 @@ const Footer: React.FC = () => {
             </Link>
             <Link to="/terms" className="text-gray-500 hover:text-white text-sm">
               Terms of Service
-            </Link>
-            <Link to="/sitemap" className="text-gray-500 hover:text-white text-sm">
-              Sitemap
             </Link>
           </div>
         </div>
