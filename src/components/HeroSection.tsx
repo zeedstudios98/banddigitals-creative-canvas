@@ -32,6 +32,14 @@ const HeroSection: React.FC = () => {
     }
   }, []);
 
+  const handleStartProject = () => {
+    window.open('https://wa.me/2348113662152?text=Hi, I would like to start a project with you!', '_blank');
+  };
+
+  const handleViewWork = () => {
+    window.location.href = '/portfolio';
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background elements */}
@@ -59,10 +67,17 @@ const HeroSection: React.FC = () => {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.7s' }}>
-            <Button className="bg-gradient-to-r from-brand-teal to-brand-lavender hover:opacity-90 text-white text-lg py-6 px-8 rounded-full">
+            <Button 
+              className="bg-gradient-to-r from-brand-teal to-brand-lavender hover:opacity-90 text-white text-lg py-6 px-8 rounded-full"
+              onClick={handleStartProject}
+            >
               Start a Project <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline" className="border-2 text-lg py-6 px-8 rounded-full">
+            <Button 
+              variant="outline" 
+              className="border-2 text-lg py-6 px-8 rounded-full"
+              onClick={handleViewWork}
+            >
               View My Work
             </Button>
           </div>
