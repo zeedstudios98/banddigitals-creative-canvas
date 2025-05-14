@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Instagram, Twitter, Linkedin, ArrowRight } from 'lucide-react';
+import { Instagram, Facebook, Linkedin, Mail, Phone } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://instagram.com" 
+                href="https://instagram.com/banddigitals" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-gray-800 hover:bg-brand-lavender p-2.5 rounded-full transition-colors"
@@ -31,22 +31,36 @@ const Footer: React.FC = () => {
                 <Instagram size={18} />
               </a>
               <a 
-                href="https://twitter.com" 
+                href="https://facebook.com/saheedzeed" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-gray-800 hover:bg-brand-lavender p-2.5 rounded-full transition-colors"
-                aria-label="Twitter"
+                aria-label="Facebook"
               >
-                <Twitter size={18} />
+                <Facebook size={18} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/saheed-ajisola" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-gray-800 hover:bg-brand-lavender p-2.5 rounded-full transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={18} />
+              </a>
+              <a 
+                href="mailto:banddigitals@gmail.com" 
+                className="bg-gray-800 hover:bg-brand-lavender p-2.5 rounded-full transition-colors"
+                aria-label="Email"
+              >
+                <Mail size={18} />
+              </a>
+              <a 
+                href="tel:+2348068692619" 
+                className="bg-gray-800 hover:bg-brand-lavender p-2.5 rounded-full transition-colors"
+                aria-label="Phone"
+              >
+                <Phone size={18} />
               </a>
             </div>
           </div>
@@ -72,7 +86,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">Services</h3>
             <ul className="space-y-3">
-              {['Web Design', 'Branding', 'UI/UX Design', 'Web Development', 'SEO Optimization', 'Email Marketing'].map((item) => (
+              {['Web Design', 'Branding', 'UI/UX Design', 'Web Development', 'SEO Optimization', 'Ghost Writing'].map((item) => (
                 <li key={item}>
                   <Link 
                     to="/services"
@@ -99,7 +113,7 @@ const Footer: React.FC = () => {
                   className="rounded-l-full bg-gray-800 border-gray-700 text-white"
                 />
                 <Button className="rounded-r-full bg-brand-lavender hover:bg-brand-lavender/90">
-                  <ArrowRight size={18} />
+                  <Mail size={18} />
                 </Button>
               </div>
               <p className="text-gray-500 text-xs">

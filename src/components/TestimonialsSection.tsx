@@ -43,6 +43,15 @@ const testimonials: Testimonial[] = [
     avatar: "https://randomuser.me/api/portraits/women/68.jpg",
     rating: 5
   },
+  {
+    id: 4,
+    content: "I've had a few jobs done via Fiverr. I can genuinely say that this is my first genuine full 5 stars and if I could I would give more, as Band Digital went way and above what I was looking for. Such professionalism. Great communication. Excellent end product. I will definitely recommend and use again.",
+    author: "Andy",
+    position: "Client",
+    company: "United Kingdom",
+    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    rating: 5
+  }
 ];
 
 const TestimonialsSection: React.FC = () => {
