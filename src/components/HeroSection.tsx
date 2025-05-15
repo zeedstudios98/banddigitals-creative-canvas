@@ -44,14 +44,14 @@ const HeroSection: React.FC = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background elements */}
       <div className="absolute inset-0 bg-hero-pattern z-0"></div>
-      <div className="absolute top-[20%] right-[15%] w-64 h-64 rounded-full bg-gradient-to-br from-brand-lavender/30 to-brand-teal/30 blur-3xl animate-float z-0"></div>
-      <div className="absolute bottom-[20%] left-[10%] w-48 h-48 rounded-full bg-gradient-to-tr from-brand-peach/30 to-brand-gold/30 blur-3xl animate-float z-0" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute top-[20%] right-[15%] w-64 h-64 rounded-full bg-gradient-to-br from-[#AC94F4]/30 to-[#4FD1C5]/30 blur-3xl animate-float z-0"></div>
+      <div className="absolute bottom-[20%] left-[10%] w-48 h-48 rounded-full bg-gradient-to-tr from-[#FFB88C]/30 to-[#F8CD57]/30 blur-3xl animate-float z-0" style={{ animationDelay: '1s' }}></div>
       
       <div className="container-custom relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-6">
-            <span className="inline-block px-4 py-2 rounded-full bg-brand-lavender/10 dark:bg-brand-lavender/20 text-brand-navy dark:text-brand-lavender text-sm font-medium animate-fade-in">
-              Freelance Designer & Developer since 2022
+            <span className="inline-block px-4 py-2 rounded-full bg-[#AC94F4]/10 dark:bg-[#AC94F4]/20 text-[#0A2342] dark:text-[#AC94F4] text-sm font-medium animate-fade-in">
+              Digital Designer & Developer since 2022
             </span>
           </div>
           
@@ -59,16 +59,16 @@ const HeroSection: React.FC = () => {
             ref={headingRef}
             className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6"
           >
-            Turning Your Digital Ideas Into Reality
+            Crafting Digital Experiences That Inspire
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-            I craft websites and digital experiences that connect with your audience and elevate your online presence.
+            I transform your ideas into captivating digital experiences that connect with your audience and elevate your brand.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.7s' }}>
             <Button 
-              className="bg-gradient-to-r from-brand-teal to-brand-lavender hover:opacity-90 text-white text-lg py-6 px-8 rounded-full"
+              className="bg-gradient-to-r from-[#4FD1C5] to-[#AC94F4] hover:opacity-90 text-white text-lg py-6 px-8 rounded-full"
               onClick={handleStartProject}
             >
               Start a Project <ArrowRight className="ml-2 h-5 w-5" />

@@ -18,56 +18,56 @@ interface Service {
 const services: Service[] = [
   {
     title: 'Web Design',
-    description: 'Beautiful, responsive websites that engage visitors and drive conversions',
+    description: 'Custom websites that capture your brand's essence and engage your target audience',
     icon: <Globe className="h-6 w-6" />,
-    color: 'text-blue-500',
-    gradientFrom: 'from-blue-500/20',
-    gradientTo: 'to-indigo-500/20',
+    color: 'text-[#4FD1C5]',
+    gradientFrom: 'from-[#4FD1C5]/20',
+    gradientTo: 'to-[#38B2AC]/20',
     slug: 'web-design'
   },
   {
     title: 'Branding',
-    description: 'Strategic brand development, logo design and visual identity systems',
+    description: 'Strategic brand identity design that helps you stand out in a competitive market',
     icon: <Palette className="h-6 w-6" />,
-    color: 'text-purple-500',
-    gradientFrom: 'from-purple-500/20',
-    gradientTo: 'to-pink-500/20',
+    color: 'text-[#AC94F4]',
+    gradientFrom: 'from-[#AC94F4]/20',
+    gradientTo: 'to-[#9F7AEA]/20',
     slug: 'branding'
   },
   {
     title: 'UI/UX Design',
-    description: 'User-centered design creating intuitive, delightful digital experiences',
+    description: 'User-centered interfaces that create seamless, intuitive digital experiences',
     icon: <Bookmark className="h-6 w-6" />,
-    color: 'text-teal-500',
-    gradientFrom: 'from-teal-500/20',
-    gradientTo: 'to-emerald-500/20',
+    color: 'text-[#4FD1C5]',
+    gradientFrom: 'from-[#4FD1C5]/20',
+    gradientTo: 'to-[#38B2AC]/20',
     slug: 'ui-ux-design'
   },
   {
     title: 'Web Development',
-    description: 'Custom web applications with powerful features and seamless functionality',
+    description: 'Robust, responsive websites and applications built with modern technologies',
     icon: <Code className="h-6 w-6" />,
-    color: 'text-amber-500',
-    gradientFrom: 'from-amber-500/20',
-    gradientTo: 'to-orange-500/20',
+    color: 'text-[#F8CD57]',
+    gradientFrom: 'from-[#F8CD57]/20',
+    gradientTo: 'to-[#ECC94B]/20',
     slug: 'web-development'
   },
   {
     title: 'SEO Optimization',
-    description: 'Improve visibility and drive organic traffic with data-driven SEO strategies',
+    description: 'Data-driven strategies to improve visibility and drive organic traffic to your site',
     icon: <BarChart className="h-6 w-6" />,
-    color: 'text-green-500',
-    gradientFrom: 'from-green-500/20',
-    gradientTo: 'to-lime-500/20',
+    color: 'text-[#4FD1C5]',
+    gradientFrom: 'from-[#4FD1C5]/20',
+    gradientTo: 'to-[#38B2AC]/20',
     slug: 'seo-optimization'
   },
   {
     title: 'Ghost Writing',
-    description: 'Engage your audience with professional content written for your specific needs',
+    description: 'Compelling content that tells your story and connects with your audience',
     icon: <Mail className="h-6 w-6" />,
-    color: 'text-red-500',
-    gradientFrom: 'from-red-500/20',
-    gradientTo: 'to-rose-500/20',
+    color: 'text-[#FFB88C]',
+    gradientFrom: 'from-[#FFB88C]/20',
+    gradientTo: 'to-[#FF9A76]/20',
     slug: 'ghost-writing'
   },
 ];
@@ -83,13 +83,12 @@ const ServicesSection: React.FC = () => {
     <section className="section" id="services">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-sm font-medium text-brand-lavender mb-2">MY SERVICES</p>
+          <p className="text-sm font-medium text-[#AC94F4] mb-2">MY SERVICES</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Expertise That Drives <span className="text-gradient">Results</span>
+            Expertise That Delivers <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#4FD1C5] to-[#AC94F4]">Results</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            I offer comprehensive digital solutions tailored to your unique challenges, 
-            helping you reach your business goals with creativity and precision.
+            I offer tailored digital solutions designed to help you achieve your business goals and create meaningful connections with your audience.
           </p>
         </div>
 
@@ -97,7 +96,7 @@ const ServicesSection: React.FC = () => {
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className="group bg-card border border-border/50 hover:border-brand-lavender/50 transition-all duration-300 overflow-hidden"
+              className="group bg-card border border-border/50 hover:border-[#AC94F4]/50 transition-all duration-300 overflow-hidden"
             >
               <CardContent className="p-6">
                 <div className={cn(
@@ -113,7 +112,7 @@ const ServicesSection: React.FC = () => {
                 <p className="text-muted-foreground mb-6">{service.description}</p>
                 <button 
                   onClick={() => handleLearnMore(service.slug)}
-                  className="flex items-center font-medium text-sm hover:text-brand-lavender transition-colors"
+                  className="flex items-center font-medium text-sm hover:text-[#AC94F4] transition-colors"
                 >
                   <span>Learn More</span>
                   <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />

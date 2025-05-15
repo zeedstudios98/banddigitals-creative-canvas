@@ -18,25 +18,25 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    content: "Working with BandDigitals was transformative for our brand. Their creative vision and strategic approach helped us stand out in a crowded market. The team delivered exceptional results that exceeded our expectations.",
+    content: "Working with this talented freelancer was transformative for my brand. The creative vision and strategic approach helped my business stand out in a crowded market. The work delivered exceeded my expectations in every way.",
     author: "Sarah Johnson",
-    position: "Marketing Director",
+    position: "Owner",
     company: "Elevate Tech",
     avatar: "https://randomuser.me/api/portraits/women/45.jpg",
     rating: 5
   },
   {
     id: 2,
-    content: "BandDigitals brought our vision to life with their incredible design talent. Their attention to detail and understanding of our audience resulted in a website that not only looks beautiful but converts visitors into customers.",
+    content: "My vision was brought to life with incredible design talent. The attention to detail and understanding of my audience resulted in a website that not only looks beautiful but has significantly increased my conversion rate.",
     author: "Michael Chen",
-    position: "CEO",
+    position: "Entrepreneur",
     company: "Horizon Ventures",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
     rating: 5
   },
   {
     id: 3,
-    content: "The team at BandDigitals has been instrumental in our digital transformation. Their strategic guidance and creative expertise helped us reimagine our online presence and connect with our audience in meaningful ways.",
+    content: "I received instrumental guidance in my digital transformation. The strategic expertise and creative solutions helped me reimagine my online presence and connect with my audience in meaningful ways.",
     author: "Alexis Rivera",
     position: "Brand Manager",
     company: "Pulse Fitness",
@@ -45,9 +45,9 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 4,
-    content: "I've had a few jobs done via Fiverr. I can genuinely say that this is my first genuine full 5 stars and if I could I would give more, as Band Digital went way and above what I was looking for. Such professionalism. Great communication. Excellent end product. I will definitely recommend and use again.",
+    content: "I've had several freelancers work on projects for me, but this was my first genuine full 5-star experience. The level of professionalism, communication, and quality of the end product went way beyond what I was expecting. I'll definitely be a returning client.",
     author: "Andy",
-    position: "Client",
+    position: "Business Owner",
     company: "United Kingdom",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
     rating: 5
@@ -73,18 +73,18 @@ const TestimonialsSection: React.FC = () => {
     <section className="section bg-gradient-to-b from-background to-muted dark:from-background dark:to-gray-900/30">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-sm font-medium text-brand-lavender mb-2">TESTIMONIALS</p>
+          <p className="text-sm font-medium text-[#AC94F4] mb-2">TESTIMONIALS</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            What Our <span className="text-gradient-gold">Clients</span> Say
+            What My <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#F8CD57] to-[#FFB88C]">Clients</span> Say
           </h2>
           <p className="text-muted-foreground text-lg">
-            Don't take our word for it. Hear from the clients who have experienced 
-            the impact of our creative solutions.
+            Don't take my word for it. Hear directly from clients who have experienced 
+            the impact of my creative solutions on their businesses.
           </p>
         </div>
 
         <div className="relative max-w-4xl mx-auto">
-          <Quote className="absolute top-0 left-0 h-16 w-16 text-brand-lavender/20 -translate-x-1/2 -translate-y-1/2" />
+          <Quote className="absolute top-0 left-0 h-16 w-16 text-[#AC94F4]/20 -translate-x-1/2 -translate-y-1/2" />
           
           <Card className="border-0 shadow-xl bg-card">
             <CardContent className="p-8 md:p-12">
@@ -114,7 +114,7 @@ const TestimonialsSection: React.FC = () => {
                     
                     <div className="flex space-x-1">
                       {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
-                        <Star key={i} className="h-5 w-5 fill-brand-gold text-brand-gold" />
+                        <Star key={i} className="h-5 w-5 fill-[#F8CD57] text-[#F8CD57]" />
                       ))}
                     </div>
                   </div>
@@ -132,7 +132,7 @@ const TestimonialsSection: React.FC = () => {
                 className={cn(
                   "w-3 h-3 rounded-full transition-all",
                   currentIndex === idx 
-                    ? "bg-brand-lavender w-8" 
+                    ? "bg-[#AC94F4] w-8" 
                     : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
                 )}
                 aria-label={`Go to testimonial ${idx + 1}`}

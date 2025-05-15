@@ -42,50 +42,49 @@ const ContactSection: React.FC = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-sm font-medium text-brand-lavender mb-2">GET IN TOUCH</p>
+            <p className="text-sm font-medium text-[#AC94F4] mb-2">GET IN TOUCH</p>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Ready to Start Your <span className="text-gradient">Next Project</span>?
+              Let's Create Something <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#4FD1C5] to-[#AC94F4]">Amazing</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Whether you have a question about our services, pricing, or just want to chat about your project,
-              I'm here to help you build something amazing.
+              Have a project in mind or need creative solutions for your business? 
+              I'm here to help turn your vision into reality with personalized attention to your unique needs.
             </p>
             
             <div className="space-y-6 mb-8">
               <div className="flex items-start space-x-4">
-                <div className="bg-brand-lavender/10 p-3 rounded-full text-brand-lavender">
+                <div className="bg-[#AC94F4]/10 p-3 rounded-full text-[#AC94F4]">
                   <MapPin className="h-5 w-5" />
                 </div>
                 <div>
                   <h3 className="font-medium mb-1">My Location</h3>
                   <p className="text-muted-foreground">
-                    123 Creative Avenue, Design District<br />
-                    San Francisco, CA 94103
+                    Lagos, Nigeria
                   </p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-4">
-                <div className="bg-brand-lavender/10 p-3 rounded-full text-brand-lavender">
+                <div className="bg-[#AC94F4]/10 p-3 rounded-full text-[#AC94F4]">
                   <Mail className="h-5 w-5" />
                 </div>
                 <div>
                   <h3 className="font-medium mb-1">Email Me</h3>
                   <p className="text-muted-foreground">
-                    <a href="mailto:banddigitals@gmail.com" className="hover:text-brand-lavender transition-colors">banddigitals@gmail.com</a>
+                    <a href="mailto:banddigitals@gmail.com" className="hover:text-[#AC94F4] transition-colors">banddigitals@gmail.com</a>
                   </p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-4">
-                <div className="bg-brand-lavender/10 p-3 rounded-full text-brand-lavender">
+                <div className="bg-[#AC94F4]/10 p-3 rounded-full text-[#AC94F4]">
                   <Phone className="h-5 w-5" />
                 </div>
                 <div>
                   <h3 className="font-medium mb-1">Call Me</h3>
                   <p className="text-muted-foreground">
-                    <a href="tel:+2348113662152" className="hover:text-brand-lavender transition-colors">+234 811 366 2152</a><br />
-                    Monday-Friday, 9am-6pm WAT
+                    <a href="tel:+2348113662152" className="hover:text-[#AC94F4] transition-colors">+234 811 366 2152</a><br />
+                    Available Monday-Friday, 9am-6pm WAT
                   </p>
                 </div>
               </div>
@@ -155,7 +154,7 @@ const ContactSection: React.FC = () => {
                 
                 <Button 
                   type="submit" 
-                  className="w-full bg-gradient-to-r from-brand-teal to-brand-lavender hover:opacity-90 transition-opacity text-white rounded-full py-6"
+                  className="w-full bg-gradient-to-r from-[#4FD1C5] to-[#AC94F4] hover:opacity-90 transition-opacity text-white rounded-full py-6"
                 >
                   Send Message
                 </Button>

@@ -37,14 +37,14 @@ const Footer: React.FC = () => {
               />
             </Link>
             <p className="text-gray-400 text-sm">
-              I craft digital experiences that elevate brands and inspire audiences through thoughtful design and strategic innovation.
+              I craft digital experiences that elevate brands and connect with audiences through thoughtful design and strategic creativity.
             </p>
             <div className="flex space-x-4">
               <a 
                 href="https://instagram.com/banddigitals" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-gray-800 hover:bg-brand-lavender p-2.5 rounded-full transition-colors"
+                className="bg-gray-800 hover:bg-[#AC94F4] p-2.5 rounded-full transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram size={18} />
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
                 href="https://facebook.com/saheedzeed" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-gray-800 hover:bg-brand-lavender p-2.5 rounded-full transition-colors"
+                className="bg-gray-800 hover:bg-[#AC94F4] p-2.5 rounded-full transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook size={18} />
@@ -62,21 +62,21 @@ const Footer: React.FC = () => {
                 href="https://www.linkedin.com/in/saheed-ajisola" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-gray-800 hover:bg-brand-lavender p-2.5 rounded-full transition-colors"
+                className="bg-gray-800 hover:bg-[#AC94F4] p-2.5 rounded-full transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={18} />
               </a>
               <a 
                 href="mailto:banddigitals@gmail.com" 
-                className="bg-gray-800 hover:bg-brand-lavender p-2.5 rounded-full transition-colors"
+                className="bg-gray-800 hover:bg-[#AC94F4] p-2.5 rounded-full transition-colors"
                 aria-label="Email"
               >
                 <Mail size={18} />
               </a>
               <a 
                 href="tel:+2348068692619" 
-                className="bg-gray-800 hover:bg-brand-lavender p-2.5 rounded-full transition-colors"
+                className="bg-gray-800 hover:bg-[#AC94F4] p-2.5 rounded-full transition-colors"
                 aria-label="Phone"
               >
                 <Phone size={18} />
@@ -133,7 +133,7 @@ const Footer: React.FC = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <Button type="submit" className="rounded-r-full bg-brand-lavender hover:bg-brand-lavender/90">
+                <Button type="submit" className="rounded-r-full bg-[#AC94F4] hover:bg-[#AC94F4]/90">
                   <ArrowRight size={18} />
                 </Button>
               </div>

@@ -113,7 +113,7 @@ const Navigation = () => {
           
           {/* Desktop CTA */}
           <Button 
-            className="hidden md:flex bg-gradient-to-r from-brand-teal to-brand-lavender hover:opacity-90 transition-opacity text-white rounded-full"
+            className="hidden md:flex bg-gradient-to-r from-[#4FD1C5] to-[#AC94F4] hover:opacity-90 transition-opacity text-white rounded-full"
             onClick={handleStartProject}
           >
             Start a Project
@@ -147,7 +147,7 @@ const Navigation = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className="py-2 hover:text-brand-lavender transition-colors"
+                    className="py-2 hover:text-[#AC94F4] transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
@@ -157,23 +157,23 @@ const Navigation = () => {
               
               <div className="mt-auto">
                 <Button 
-                  className="w-full bg-gradient-to-r from-brand-teal to-brand-lavender hover:opacity-90 transition-opacity text-white rounded-full"
+                  className="w-full bg-gradient-to-r from-[#4FD1C5] to-[#AC94F4] hover:opacity-90 transition-opacity text-white rounded-full"
                   onClick={handleStartProject}
                 >
                   Start a Project
                 </Button>
                 
                 <div className="flex justify-center mt-8 space-x-6">
-                  <a href="https://instagram.com/banddigitals" target="_blank" rel="noopener noreferrer" className="hover:text-brand-lavender transition-colors" aria-label="Instagram">
+                  <a href="https://instagram.com/banddigitals" target="_blank" rel="noopener noreferrer" className="hover:text-[#AC94F4] transition-colors" aria-label="Instagram">
                     <Instagram size={22} />
                   </a>
-                  <a href="https://facebook.com/saheedzeed" target="_blank" rel="noopener noreferrer" className="hover:text-brand-lavender transition-colors" aria-label="Facebook">
+                  <a href="https://facebook.com/saheedzeed" target="_blank" rel="noopener noreferrer" className="hover:text-[#AC94F4] transition-colors" aria-label="Facebook">
                     <Facebook size={22} />
                   </a>
-                  <a href="https://www.linkedin.com/in/saheed-ajisola" target="_blank" rel="noopener noreferrer" className="hover:text-brand-lavender transition-colors" aria-label="LinkedIn">
+                  <a href="https://www.linkedin.com/in/saheed-ajisola" target="_blank" rel="noopener noreferrer" className="hover:text-[#AC94F4] transition-colors" aria-label="LinkedIn">
                     <Linkedin size={22} />
                   </a>
-                  <a href="mailto:banddigitals@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-lavender transition-colors" aria-label="Email">
+                  <a href="mailto:banddigitals@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#AC94F4] transition-colors" aria-label="Email">
                     <Mail size={22} />
                   </a>
                 </div>
