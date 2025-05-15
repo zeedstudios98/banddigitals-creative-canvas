@@ -9,25 +9,19 @@ const HeroSection: React.FC = () => {
   useEffect(() => {
     // Initialize text animation
     if (headingRef.current) {
-      const text = headingRef.current.textContent || '';
+      const text = "Crafting Digital Experiences That Inspire";
       headingRef.current.innerHTML = '';
       
-      // Create span for each character
+      // Create span for each character with faster animation
       text.split('').forEach((char, i) => {
         const span = document.createElement('span');
         span.textContent = char === ' ' ? '\u00A0' : char;
-        span.style.opacity = '0';
-        span.style.transform = 'translateY(20px)';
-        span.style.transition = `opacity 0.5s ease ${i * 0.05}s, transform 0.5s ease ${i * 0.05}s`;
+        span.style.opacity = '1'; // Start visible
+        span.style.transform = 'translateY(0)'; // Start in final position
+        span.style.display = 'inline-block'; // Ensure proper display
         
-        // Add after a delay
+        // Add character immediately
         headingRef.current?.appendChild(span);
-        
-        // Trigger animation
-        setTimeout(() => {
-          span.style.opacity = '1';
-          span.style.transform = 'translateY(0)';
-        }, 100);
       });
     }
 
@@ -37,12 +31,12 @@ const HeroSection: React.FC = () => {
       elements.forEach((element, index) => {
         setTimeout(() => {
           element.classList.add('active');
-        }, index * 200); // Stagger the animations
+        }, index * 100); // Speed up animations
       });
     };
 
-    // Initialize animations after a delay
-    setTimeout(animateElements, 500);
+    // Initialize animations immediately
+    animateElements();
   }, []);
 
   const handleStartProject = () => {
@@ -70,7 +64,7 @@ const HeroSection: React.FC = () => {
           
           <h1 
             ref={headingRef}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 min-h-[120px] sm:min-h-[140px]"
+            className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6"
           >
             Crafting Digital Experiences That Inspire
           </h1>
