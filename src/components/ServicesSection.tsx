@@ -18,7 +18,7 @@ interface Service {
 const services: Service[] = [
   {
     title: 'Web Design',
-    description: 'Custom websites that capture your brand's essence and engage your target audience',
+    description: "Custom websites that capture your brand's essence and engage your target audience",
     icon: <Globe className="h-6 w-6" />,
     color: 'text-[#4FD1C5]',
     gradientFrom: 'from-[#4FD1C5]/20',
