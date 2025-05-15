@@ -82,7 +82,7 @@ const ServicesSection: React.FC = () => {
   return (
     <section className="section" id="services">
       <div className="container-custom">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16 reveal">
           <p className="text-sm font-medium text-[#AC94F4] mb-2">MY SERVICES</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Expertise That Delivers <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#4FD1C5] to-[#AC94F4]">Results</span>
@@ -96,11 +96,12 @@ const ServicesSection: React.FC = () => {
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className="group bg-card border border-border/50 hover:border-[#AC94F4]/50 transition-all duration-300 overflow-hidden"
+              className="group bg-card border border-border/50 hover:border-[#AC94F4]/50 transition-all duration-300 overflow-hidden reveal reveal-item hover:shadow-lg hover:-translate-y-1"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardContent className="p-6">
                 <div className={cn(
-                  "w-12 h-12 rounded-xl flex items-center justify-center mb-6 bg-gradient-to-br",
+                  "w-12 h-12 rounded-xl flex items-center justify-center mb-6 bg-gradient-to-br transform transition-transform duration-300 group-hover:scale-110",
                   service.gradientFrom,
                   service.gradientTo
                 )}>

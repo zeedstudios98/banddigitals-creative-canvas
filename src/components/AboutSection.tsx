@@ -13,8 +13,8 @@ const AboutSection: React.FC = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image column */}
-          <div className="relative">
-            <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl">
+          <div className="relative reveal">
+            <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl transform transition-transform hover:scale-[1.02] duration-500">
               <img
                 src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2000&auto=format&fit=crop"
                 alt="Creative Workspace"
@@ -27,7 +27,7 @@ const AboutSection: React.FC = () => {
             <div className="absolute bottom-12 -right-10 w-32 h-32 bg-[#4FD1C5]/30 rounded-full blur-xl z-0 animate-float" style={{ animationDelay: '1.5s' }}></div>
             
             {/* Stats card */}
-            <div className="absolute -bottom-8 -right-8 lg:-right-12 bg-card shadow-lg rounded-xl p-5 z-20 max-w-[240px]">
+            <div className="absolute -bottom-8 -right-8 lg:-right-12 bg-card shadow-lg rounded-xl p-5 z-20 max-w-[240px] hover:shadow-xl transform transition-all duration-300 hover:-translate-y-1">
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <p className="text-3xl font-bold text-[#AC94F4]">40+</p>
@@ -42,17 +42,17 @@ const AboutSection: React.FC = () => {
           </div>
           
           {/* Content column */}
-          <div>
-            <p className="text-sm font-medium text-[#AC94F4] mb-2">ABOUT ME</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <div className="reveal">
+            <p className="text-sm font-medium text-[#AC94F4] mb-2 reveal-item">ABOUT ME</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 reveal-item">
               Passionate about digital craftsmanship
             </h2>
             
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-lg text-muted-foreground mb-6 reveal-item">
               Since 2022, I've been combining creativity with technical expertise to deliver exceptional digital solutions for clients across various industries.
             </p>
             
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-lg text-muted-foreground mb-8 reveal-item">
               With every project, I bring a commitment to quality, attention to detail, and a deep understanding of what makes digital experiences truly resonate with users.
             </p>
             
@@ -63,7 +63,7 @@ const AboutSection: React.FC = () => {
                 'Technical Excellence', 
                 'Client-Focused Approach'
               ].map((item, index) => (
-                <div key={index} className="flex items-center space-x-2">
+                <div key={index} className="flex items-center space-x-2 reveal-item" style={{ transitionDelay: `${index * 100}ms` }}>
                   <CheckCircle2 className="h-5 w-5 text-[#4FD1C5]" />
                   <span>{item}</span>
                 </div>
@@ -71,7 +71,7 @@ const AboutSection: React.FC = () => {
             </div>
             
             <Button 
-              className="rounded-full bg-gradient-to-r from-[#4FD1C5] to-[#AC94F4] text-white hover:opacity-90" 
+              className="rounded-full bg-gradient-to-r from-[#4FD1C5] to-[#AC94F4] text-white hover:opacity-90 transform transition-transform hover:scale-105 reveal-item" 
               size="lg"
               onClick={handleLearnMore}
             >

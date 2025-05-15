@@ -15,7 +15,7 @@ const Index: React.FC = () => {
     const observerOptions = {
       root: null, // viewport
       rootMargin: '0px',
-      threshold: 0.1,
+      threshold: 0.15,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -32,9 +32,32 @@ const Index: React.FC = () => {
       observer.observe(element);
     });
 
+    // Add animation to sections as they appear
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const elements = entry.target.querySelectorAll('.reveal-item');
+          elements.forEach((element, index) => {
+            setTimeout(() => {
+              element.classList.add('active');
+            }, index * 150);
+          });
+        }
+      });
+    }, { threshold: 0.1 });
+
+    const sections = document.querySelectorAll('section');
+    sections.forEach((section) => {
+      sectionObserver.observe(section);
+    });
+
     return () => {
       revealElements.forEach((element) => {
         observer.unobserve(element);
+      });
+      
+      sections.forEach((section) => {
+        sectionObserver.unobserve(section);
       });
     };
   }, []);

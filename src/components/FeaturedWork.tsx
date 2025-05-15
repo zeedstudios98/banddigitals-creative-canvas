@@ -49,16 +49,16 @@ const FeaturedWork: React.FC = () => {
   return (
     <section className="section bg-muted dark:bg-background">
       <div className="container-custom">
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 lg:mb-16">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 lg:mb-16 reveal">
           <div>
-            <p className="text-sm font-medium text-brand-lavender mb-2">FEATURED WORK</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Latest Projects</h2>
-            <p className="text-muted-foreground text-lg max-w-xl">
+            <p className="text-sm font-medium text-brand-lavender mb-2 reveal-item">FEATURED WORK</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 reveal-item">Our Latest Projects</h2>
+            <p className="text-muted-foreground text-lg max-w-xl reveal-item">
               Explore our award-winning projects showcasing the perfect blend of creativity, 
               strategy and technical excellence.
             </p>
           </div>
-          <Button className="mt-6 lg:mt-0 rounded-full" variant="outline">
+          <Button className="mt-6 lg:mt-0 rounded-full reveal-item animate-pulse-subtle" variant="outline">
             View All Projects <ArrowUpRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
@@ -67,7 +67,8 @@ const FeaturedWork: React.FC = () => {
           {projects.map((project) => (
             <div 
               key={project.id}
-              className="group relative h-[400px] lg:h-[450px] overflow-hidden rounded-xl cursor-pointer"
+              className="group relative h-[400px] lg:h-[450px] overflow-hidden rounded-xl cursor-pointer reveal reveal-item"
+              style={{ transitionDelay: `${project.id * 100}ms` }}
               onMouseEnter={() => setActiveIndex(project.id)}
               onMouseLeave={() => setActiveIndex(null)}
             >
