@@ -1,11 +1,27 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Linkedin, Mail, Phone } from 'lucide-react';
+import { Instagram, Facebook, Linkedin, Mail, Phone, ArrowRight } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
+import { toast } from 'sonner';
 
 const Footer: React.FC = () => {
+  const [email, setEmail] = useState('');
+
+  const handleEmailSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) {
+      toast.error("Please enter your email address");
+      return;
+    }
+    
+    // Open Gmail with the email
+    window.open(`mailto:banddigitals@gmail.com?subject=Get in touch&body=Hello, my email is: ${email}. I'd like to discuss working together.`, '_blank');
+    toast.success("Opening your email client");
+    setEmail('');
+  };
+
   return (
     <footer className="bg-gray-950 text-white pt-16 pb-8">
       <div className="container-custom">
@@ -16,7 +32,8 @@ const Footer: React.FC = () => {
               <img 
                 src="/lovable-uploads/cb46f468-82b0-4d5a-aaf1-b24493f425f6.png" 
                 alt="BandDigitals Logo" 
-                className="h-10 mr-2 bg-white rounded-md p-1"
+                className="h-10 mr-2"
+                style={{ filter: 'brightness(1.2)' }}
               />
             </Link>
             <p className="text-gray-400 text-sm">
@@ -91,7 +108,7 @@ const Footer: React.FC = () => {
               {['Web Design', 'Branding', 'UI/UX Design', 'Web Development', 'SEO Optimization', 'Ghost Writing'].map((item) => (
                 <li key={item}>
                   <Link 
-                    to="/services"
+                    to={`/services#${item.toLowerCase().replace(/\s+/g, '-')}`}
                     className="text-gray-400 hover:text-white transition-colors hover:underline"
                   >
                     {item}
@@ -107,21 +124,23 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 text-sm mb-4">
               Have a project in mind? Send me a message and let's create something amazing together.
             </p>
-            <div className="space-y-3">
+            <form onSubmit={handleEmailSubmit} className="space-y-3">
               <div className="flex">
                 <Input
                   type="email"
                   placeholder="Your email address"
                   className="rounded-l-full bg-gray-800 border-gray-700 text-white"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
-                <Button className="rounded-r-full bg-brand-lavender hover:bg-brand-lavender/90">
-                  <Mail size={18} />
+                <Button type="submit" className="rounded-r-full bg-brand-lavender hover:bg-brand-lavender/90">
+                  <ArrowRight size={18} />
                 </Button>
               </div>
               <p className="text-gray-500 text-xs">
                 I respect your privacy. Your information will never be shared.
               </p>
-            </div>
+            </form>
           </div>
         </div>
 

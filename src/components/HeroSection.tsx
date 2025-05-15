@@ -59,11 +59,11 @@ const HeroSection: React.FC = () => {
             ref={headingRef}
             className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6"
           >
-            Creating Digital Experiences That Stand Out
+            Turning Your Digital Ideas Into Reality
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-            I craft websites, branding, and content that elevate your online presence and connect with your audience.
+            I craft websites and digital experiences that connect with your audience and elevate your online presence.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.7s' }}>

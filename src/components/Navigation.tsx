@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Moon, Sun, Instagram, Facebook, Linkedin } from 'lucide-react';
+import { Menu, X, Moon, Sun, Instagram, Facebook, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -56,6 +56,10 @@ const Navigation = () => {
     setDarkMode(!darkMode);
   };
 
+  const handleStartProject = () => {
+    window.open('https://wa.me/2348113662152?text=Hi, I would like to start a project with you!', '_blank');
+  };
+
   return (
     <header className={cn(
       'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
@@ -68,6 +72,7 @@ const Navigation = () => {
             src="/lovable-uploads/cb46f468-82b0-4d5a-aaf1-b24493f425f6.png" 
             alt="BandDigitals Logo" 
             className="h-10 mr-2"
+            style={{ filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.2))' }}
           />
         </Link>
 
@@ -107,7 +112,10 @@ const Navigation = () => {
           </Button>
           
           {/* Desktop CTA */}
-          <Button className="hidden md:flex bg-gradient-to-r from-brand-teal to-brand-lavender hover:opacity-90 transition-opacity text-white rounded-full">
+          <Button 
+            className="hidden md:flex bg-gradient-to-r from-brand-teal to-brand-lavender hover:opacity-90 transition-opacity text-white rounded-full"
+            onClick={handleStartProject}
+          >
             Start a Project
           </Button>
         </div>
@@ -148,7 +156,10 @@ const Navigation = () => {
               </nav>
               
               <div className="mt-auto">
-                <Button className="w-full bg-gradient-to-r from-brand-teal to-brand-lavender hover:opacity-90 transition-opacity text-white rounded-full">
+                <Button 
+                  className="w-full bg-gradient-to-r from-brand-teal to-brand-lavender hover:opacity-90 transition-opacity text-white rounded-full"
+                  onClick={handleStartProject}
+                >
                   Start a Project
                 </Button>
                 
@@ -161,6 +172,9 @@ const Navigation = () => {
                   </a>
                   <a href="https://www.linkedin.com/in/saheed-ajisola" target="_blank" rel="noopener noreferrer" className="hover:text-brand-lavender transition-colors" aria-label="LinkedIn">
                     <Linkedin size={22} />
+                  </a>
+                  <a href="mailto:banddigitals@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-lavender transition-colors" aria-label="Email">
+                    <Mail size={22} />
                   </a>
                 </div>
               </div>

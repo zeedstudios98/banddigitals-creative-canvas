@@ -80,7 +80,7 @@ const ServicesSection: React.FC = () => {
   };
 
   return (
-    <section className="section">
+    <section className="section" id="services">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <p className="text-sm font-medium text-brand-lavender mb-2">MY SERVICES</p>
