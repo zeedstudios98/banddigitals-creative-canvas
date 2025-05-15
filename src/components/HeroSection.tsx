@@ -60,7 +60,7 @@ const HeroSection: React.FC = () => {
       <div className="absolute top-[20%] right-[15%] w-64 h-64 rounded-full bg-gradient-to-br from-[#AC94F4]/30 to-[#4FD1C5]/30 blur-3xl animate-float z-0"></div>
       <div className="absolute bottom-[20%] left-[10%] w-48 h-48 rounded-full bg-gradient-to-tr from-[#FFB88C]/30 to-[#F8CD57]/30 blur-3xl animate-float z-0" style={{ animationDelay: '1s' }}></div>
       
-      <div className="container-custom relative z-10">
+      <div className="container-custom relative z-10 flex flex-col items-center justify-center">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-6 reveal-item opacity-0 transform translate-y-10">
             <span className="inline-block px-4 py-2 rounded-full bg-[#AC94F4]/10 dark:bg-[#AC94F4]/20 text-[#0A2342] dark:text-[#AC94F4] text-sm font-medium">
@@ -70,7 +70,7 @@ const HeroSection: React.FC = () => {
           
           <h1 
             ref={headingRef}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 min-h-[80px] sm:min-h-[100px]"
+            className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 min-h-[120px] sm:min-h-[140px]"
           >
             Crafting Digital Experiences That Inspire
           </h1>
