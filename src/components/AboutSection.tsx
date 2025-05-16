@@ -1,11 +1,15 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { CheckCircle2 } from 'lucide-react';
+
 const AboutSection: React.FC = () => {
   const handleLearnMore = () => {
-    window.location.href = '/about';
+    window.open("https://wa.me/08113662152", "_blank");
   };
-  return <section className="section bg-muted dark:bg-gray-900/30" id="about">
+
+  return (
+    <section className="section bg-muted dark:bg-gray-900/30" id="about">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image column */}
@@ -17,8 +21,8 @@ const AboutSection: React.FC = () => {
             {/* Decorative elements */}
             <div className="absolute top-8 -left-8 w-24 h-24 bg-[#AC94F4]/30 rounded-full blur-xl z-0 animate-float"></div>
             <div className="absolute bottom-12 -right-10 w-32 h-32 bg-[#4FD1C5]/30 rounded-full blur-xl z-0 animate-float" style={{
-            animationDelay: '1.5s'
-          }}></div>
+              animationDelay: '1.5s'
+            }}></div>
             
             {/* Stats card */}
             <div className="absolute -bottom-8 -right-8 lg:-right-12 bg-card shadow-lg rounded-xl p-5 z-20 max-w-[240px] hover:shadow-xl transform transition-all duration-300 hover:-translate-y-1">
@@ -43,11 +47,11 @@ const AboutSection: React.FC = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 reveal-item">
-              Since 2022, I've been combining creativity with technical expertise to deliver exceptional digital solutions for clients across various industries.
+              Since 2022, I've been transforming brands through creative digital solutions, helping businesses connect with their audiences in meaningful and impactful ways.
             </p>
             
             <p className="text-lg text-muted-foreground mb-8 reveal-item">
-              With every project, I bring a commitment to quality, attention to detail, and a deep understanding of what makes digital experiences truly resonate with users.
+              Every project I undertake is driven by a commitment to excellence, strategic thinking, and a deep understanding of what makes digital experiences truly resonate with users.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
@@ -59,12 +63,18 @@ const AboutSection: React.FC = () => {
                 </div>)}
             </div>
             
-            <Button className="rounded-full bg-gradient-to-r from-[#4FD1C5] to-[#AC94F4] text-white hover:opacity-90 transform transition-transform hover:scale-105 reveal-item" size="lg" onClick={handleLearnMore}>
-              Learn More About Me
+            <Button 
+              className="rounded-full bg-gradient-to-r from-[#4FD1C5] to-[#AC94F4] text-white hover:opacity-90 transform transition-transform hover:scale-105 reveal-item" 
+              size="lg" 
+              onClick={handleLearnMore}
+            >
+              Contact Me Now
             </Button>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default AboutSection;

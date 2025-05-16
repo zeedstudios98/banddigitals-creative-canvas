@@ -45,10 +45,10 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 4,
-    content: "I've had several freelancers work on projects for me, but this was my first genuine full 5-star experience. The level of professionalism, communication, and quality of the end product went way beyond what I was expecting. I'll definitely be a returning client.",
+    content: "I've had several freelancers work on projects for me, but this was my first genuine full 5-star experience. The work on revamping my RareGroove Radio website was outstanding. The level of professionalism, communication, and quality of the end product went way beyond what I was expecting. I'll definitely be a returning client.",
     author: "Andy",
-    position: "Business Owner",
-    company: "United Kingdom",
+    position: "Radio Station Owner",
+    company: "RareGroove Radio",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
     rating: 5
   }

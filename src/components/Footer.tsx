@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Linkedin, Mail, Phone, ArrowRight } from 'lucide-react';
+import { Instagram, Facebook, Linkedin, Mail } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
@@ -73,13 +73,6 @@ const Footer: React.FC = () => {
                 aria-label="Email"
               >
                 <Mail size={18} />
-              </a>
-              <a 
-                href="tel:+2348068692619" 
-                className="bg-gray-800 hover:bg-[#AC94F4] p-2.5 rounded-full transition-colors"
-                aria-label="Phone"
-              >
-                <Phone size={18} />
               </a>
             </div>
           </div>

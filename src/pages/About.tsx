@@ -16,11 +16,11 @@ const About: React.FC = () => {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              We're <span className="text-gradient">BandDigitals</span>
+              About <span className="text-gradient">BandDigitals</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              An award-winning creative agency helping brands stand out in the digital landscape 
-              through strategic design and innovative storytelling.
+              We transform ideas into impactful digital experiences through strategic design 
+              and creative innovation that connects with audiences.
             </p>
           </div>
         </div>
@@ -38,8 +38,8 @@ const About: React.FC = () => {
               Principles That Guide Our <span className="text-gradient">Work</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              At BandDigitals, our core values shape everything we do, from how we collaborate 
-              with clients to how we approach every creative challenge.
+              Every project we undertake is shaped by these core values, ensuring exceptional 
+              results that meet both creative standards and business objectives.
             </p>
           </div>
           
@@ -61,8 +61,8 @@ const About: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Results-Driven Approach</h3>
               <p className="text-muted-foreground">
-                Design should be beautiful, but also strategic. We focus on creating work that drives 
-                real business results and helps our clients achieve their goals.
+                Beyond aesthetics, our work is strategic and purposeful. We focus on creating digital experiences that drive 
+                meaningful business outcomes and deliver measurable results.
               </p>
             </div>
             
@@ -72,8 +72,8 @@ const About: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Collaborative Spirit</h3>
               <p className="text-muted-foreground">
-                We believe the best work happens when clients and creators work together as partners. 
-                We listen carefully, communicate clearly, and value your input throughout the process.
+                We believe the best work happens when we partner closely with our clients. Your vision and feedback 
+                are essential to our process, creating truly personalized solutions.
               </p>
             </div>
             
@@ -81,10 +81,10 @@ const About: React.FC = () => {
               <div className="bg-brand-gold/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
                 <GraduationCap className="text-brand-gold h-6 w-6" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Continuous Learning</h3>
+              <h3 className="text-2xl font-bold mb-4">Continuous Innovation</h3>
               <p className="text-muted-foreground">
-                The digital landscape is always evolving, and so are we. We invest in ongoing education 
-                and stay ahead of industry trends to bring fresh ideas to every project.
+                The digital landscape evolves rapidly, and so do we. We stay ahead of emerging trends and technologies 
+                to bring fresh, forward-thinking approaches to every project.
               </p>
             </div>
           </div>
@@ -94,11 +94,15 @@ const About: React.FC = () => {
       {/* CTA Section */}
       <section className="section bg-gradient-to-r from-brand-navy/10 to-brand-lavender/10">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Digital Presence?</h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Let's create something amazing together. Reach out to discuss how we can help bring your vision to life.
+            Let's create something exceptional together that elevates your brand and connects with your audience.
           </p>
-          <Button className="rounded-full" size="lg">
+          <Button 
+            className="rounded-full" 
+            size="lg"
+            onClick={() => window.open("https://wa.me/08113662152", "_blank")}
+          >
             Get in Touch
           </Button>
         </div>

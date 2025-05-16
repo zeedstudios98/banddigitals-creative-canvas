@@ -64,6 +64,12 @@ const pricingPlans: PricingPlan[] = [
 ];
 
 const Services: React.FC = () => {
+  const handleContactClick = (planTitle: string) => {
+    // Encode the message with the plan title
+    const message = encodeURIComponent(`Hi, I'm interested in your ${planTitle} plan. Can we discuss the details?`);
+    window.open(`https://wa.me/08113662152?text=${message}`, "_blank");
+  };
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -221,6 +227,7 @@ const Services: React.FC = () => {
                   <Button 
                     className={`w-full rounded-lg ${plan.popular ? 'bg-brand-lavender hover:bg-brand-lavender/90' : ''}`}
                     variant={plan.popular ? 'default' : 'outline'}
+                    onClick={() => handleContactClick(plan.title)}
                   >
                     {plan.buttonText}
                   </Button>
@@ -233,7 +240,11 @@ const Services: React.FC = () => {
             <p className="text-muted-foreground mb-4">
               Need a custom solution for your specific requirements?
             </p>
-            <Button variant="outline" className="rounded-full">
+            <Button 
+              variant="outline" 
+              className="rounded-full"
+              onClick={() => handleContactClick("Custom")}
+            >
               Contact for Custom Quote
             </Button>
           </div>
