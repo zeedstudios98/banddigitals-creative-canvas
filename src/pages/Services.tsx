@@ -78,11 +78,12 @@ const Services: React.FC = () => {
       <section className="bg-muted dark:bg-gray-900/30 py-20 md:py-28">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
+            <p className="text-sm font-medium text-brand-lavender mb-2">OUR SERVICES</p>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              My <span className="text-gradient">Services</span>
+              Expertise That <span className="text-gradient">Drives Results</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              I offer comprehensive creative solutions to help your business stand out and connect with your audience.
+              I offer comprehensive digital solutions tailored to your unique challenges, helping you reach your business goals with creativity and precision.
             </p>
           </div>
         </div>
