@@ -85,7 +85,7 @@ const projects: Project[] = [
     year: '2023',
     description: 'Executed a complete brand refresh for an established coffee company looking to appeal to a younger demographic while retaining their artisanal roots.',
     challenge: 'The brand needed to modernize without alienating their loyal customer base or compromising their reputation for quality and craftsmanship.',
-    solution: 'Developed an updated visual identity that honored the company's heritage while introducing contemporary elements in logo design, packaging, and store aesthetics.',
+    solution: "Developed an updated visual identity that honored the company's heritage while introducing contemporary elements in logo design, packaging, and store aesthetics.",
     results: 'Following the rebrand, the company saw a 35% increase in sales among the 25-34 demographic while maintaining strong loyalty from existing customers.'
   },
   {
@@ -111,7 +111,7 @@ const projects: Project[] = [
     year: '2023',
     description: 'Developed and executed a comprehensive content strategy including ghost-written articles that positioned the client as a thought leader in the wellness industry.',
     challenge: 'The client had valuable expertise but lacked the time and writing skills to create engaging content that would attract and retain readers.',
-    solution: 'Created a content calendar and produced in-depth, researched articles in the client's voice that addressed common questions and concerns in their target audience.',
+    solution: "Created a content calendar and produced in-depth, researched articles in the client's voice that addressed common questions and concerns in their target audience.",
     results: 'The blog saw a 125% increase in organic traffic within six months, with average time on page increasing by 3 minutes and newsletter subscriptions growing by 78%.'
   },
   {
