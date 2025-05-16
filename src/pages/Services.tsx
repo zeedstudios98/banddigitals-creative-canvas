@@ -19,7 +19,7 @@ interface PricingPlan {
 const pricingPlans: PricingPlan[] = [
   {
     title: "Basic",
-    price: "$899",
+    price: "$500",
     description: "Perfect for small businesses just getting started",
     features: [
       "Professional website design",
@@ -32,7 +32,7 @@ const pricingPlans: PricingPlan[] = [
   },
   {
     title: "Professional",
-    price: "$1,899",
+    price: "$1,500",
     description: "Ideal for growing businesses needing a complete solution",
     features: [
       "Everything in Basic",
@@ -71,33 +71,47 @@ const Services: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background dark:bg-gray-900">
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-muted dark:bg-gray-900/30 py-20 md:py-28">
+      <section className="bg-muted dark:bg-gray-900/30 pt-20 pb-12 md:pt-28 md:pb-16">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-sm font-medium text-brand-lavender mb-2">OUR SERVICES</p>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Expertise That <span className="text-gradient">Drives Results</span>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              Our <span className="text-gradient">Services</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              I offer comprehensive digital solutions tailored to your unique challenges, helping you reach your business goals with creativity and precision.
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+              I offer comprehensive creative solutions to help your business stand out and connect with your audience.
             </p>
           </div>
         </div>
       </section>
       
-      {/* Services Section (using existing component) */}
-      <ServicesSection />
+      {/* Services Section */}
+      <section className="pt-12 pb-20">
+        <div className="container-custom">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <p className="text-sm font-medium text-brand-lavender mb-2">OUR SERVICES</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Expertise That <span className="text-gradient">Drives Results</span>
+            </h2>
+            <p className="text-muted-foreground text-lg mb-8">
+              I offer comprehensive digital solutions tailored to your unique challenges, helping you reach your business goals with creativity and precision.
+            </p>
+          </div>
+          
+          {/* Service Cards */}
+          <ServicesSection />
+        </div>
+      </section>
       
       {/* Process Section */}
       <section className="section bg-muted dark:bg-gray-900/30">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <p className="text-sm font-medium text-brand-lavender mb-2">MY PROCESS</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               How I <span className="text-gradient">Work</span>
             </h2>
             <p className="text-muted-foreground text-lg">
@@ -192,7 +206,7 @@ const Services: React.FC = () => {
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <p className="text-sm font-medium text-brand-lavender mb-2">PRICING</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Simple, Transparent <span className="text-gradient">Pricing</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
