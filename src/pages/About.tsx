@@ -1,8 +1,9 @@
+
 import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
-import { Briefcase, Award, Users, GraduationCap, CheckCircle2 } from 'lucide-react';
+import { Briefcase, Award, Users, GraduationCap } from 'lucide-react';
 
 const About: React.FC = () => {
   const handleContactClick = () => {
