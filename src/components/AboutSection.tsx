@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { CheckCircle2 } from 'lucide-react';
 
 const AboutSection: React.FC = () => {
-  const handleLearnMore = () => {
+  const handleContactMe = () => {
     window.open("https://wa.me/08113662152", "_blank");
   };
 
@@ -66,7 +66,7 @@ const AboutSection: React.FC = () => {
             <Button 
               className="rounded-full bg-gradient-to-r from-[#4FD1C5] to-[#AC94F4] text-white hover:opacity-90 transform transition-transform hover:scale-105 reveal-item" 
               size="lg" 
-              onClick={handleLearnMore}
+              onClick={handleContactMe}
             >
               Contact Me Now
             </Button>

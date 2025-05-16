@@ -7,6 +7,10 @@ import { Button } from '@/components/ui/button';
 import { Briefcase, Award, Users, GraduationCap } from 'lucide-react';
 
 const About: React.FC = () => {
+  const handleContactClick = () => {
+    window.open("https://wa.me/08113662152", "_blank");
+  };
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -19,7 +23,7 @@ const About: React.FC = () => {
               About <span className="text-gradient">BandDigitals</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              We transform ideas into impactful digital experiences through strategic design 
+              I transform ideas into impactful digital experiences through strategic design 
               and creative innovation that connects with audiences.
             </p>
           </div>
@@ -33,12 +37,12 @@ const About: React.FC = () => {
       <section className="section bg-background">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <p className="text-sm font-medium text-brand-lavender mb-2">OUR VALUES</p>
+            <p className="text-sm font-medium text-brand-lavender mb-2">MY VALUES</p>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Principles That Guide Our <span className="text-gradient">Work</span>
+              Principles That Guide My <span className="text-gradient">Work</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              Every project we undertake is shaped by these core values, ensuring exceptional 
+              Every project I undertake is shaped by these core values, ensuring exceptional 
               results that meet both creative standards and business objectives.
             </p>
           </div>
@@ -50,8 +54,8 @@ const About: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Excellence in Craft</h3>
               <p className="text-muted-foreground">
-                We're passionate about creating beautiful, functional designs that exceed expectations. 
-                Our commitment to quality means we never settle for "good enough."
+                I'm passionate about creating beautiful, functional designs that exceed expectations. 
+                My commitment to quality means I never settle for "good enough."
               </p>
             </div>
             
@@ -61,7 +65,7 @@ const About: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Results-Driven Approach</h3>
               <p className="text-muted-foreground">
-                Beyond aesthetics, our work is strategic and purposeful. We focus on creating digital experiences that drive 
+                Beyond aesthetics, my work is strategic and purposeful. I focus on creating digital experiences that drive 
                 meaningful business outcomes and deliver measurable results.
               </p>
             </div>
@@ -72,8 +76,8 @@ const About: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Collaborative Spirit</h3>
               <p className="text-muted-foreground">
-                We believe the best work happens when we partner closely with our clients. Your vision and feedback 
-                are essential to our process, creating truly personalized solutions.
+                I believe the best work happens when I partner closely with my clients. Your vision and feedback 
+                are essential to my process, creating truly personalized solutions.
               </p>
             </div>
             
@@ -83,7 +87,7 @@ const About: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Continuous Innovation</h3>
               <p className="text-muted-foreground">
-                The digital landscape evolves rapidly, and so do we. We stay ahead of emerging trends and technologies 
+                The digital landscape evolves rapidly, and so do I. I stay ahead of emerging trends and technologies 
                 to bring fresh, forward-thinking approaches to every project.
               </p>
             </div>
@@ -101,7 +105,7 @@ const About: React.FC = () => {
           <Button 
             className="rounded-full" 
             size="lg"
-            onClick={() => window.open("https://wa.me/08113662152", "_blank")}
+            onClick={handleContactClick}
           >
             Get in Touch
           </Button>
