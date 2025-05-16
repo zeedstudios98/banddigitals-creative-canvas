@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -14,82 +15,93 @@ const About: React.FC = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-muted dark:bg-gray-900/30 py-20 md:py-28">
+      <section className="bg-muted/50 dark:bg-gray-900/30 py-20 md:py-28 text-center">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-sm font-medium text-brand-lavender mb-2">ABOUT ME</p>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              I'm a creative <span className="text-gradient">storyteller</span>
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              BandDigitals is a passion-driven creative agency focused on designing exceptional digital
-              experiences that drive results and create lasting impressions.
-            </p>
-          </div>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            We're <span className="text-[#5A78FF]">BandDigitals</span>
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+            An award-winning creative agency helping brands stand out in the digital
+            landscape through strategic design and innovative storytelling.
+          </p>
         </div>
       </section>
       
-      {/* About Me Section */}
-      <section className="section">
+      {/* About Us Section */}
+      <section className="py-24">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            {/* Image column */}
-            <div className="relative reveal">
-              <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl transform transition-transform hover:scale-[1.02] duration-500">
-                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2000&auto=format&fit=crop" alt="Creative Workspace" className="w-full h-auto" />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="relative">
+              <div className="relative z-10 rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2000&auto=format&fit=crop" 
+                  alt="Team collaborating" 
+                  className="w-full h-auto"
+                />
               </div>
               
-              {/* Decorative elements */}
-              <div className="absolute top-8 -left-8 w-24 h-24 bg-[#AC94F4]/30 rounded-full blur-xl z-0 animate-float"></div>
-              <div className="absolute bottom-12 -right-10 w-32 h-32 bg-[#4FD1C5]/30 rounded-full blur-xl z-0 animate-float" style={{
-                animationDelay: '1.5s'
-              }}></div>
-              
-              {/* Stats card */}
-              <div className="absolute -bottom-8 -right-8 lg:-right-12 bg-card shadow-lg rounded-xl p-5 z-20 max-w-[240px] hover:shadow-xl transform transition-all duration-300 hover:-translate-y-1">
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <p className="text-3xl font-bold text-[#AC94F4]">10+</p>
+              <div className="absolute bottom-0 right-0 transform translate-x-1/4 translate-y-1/4 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl">
+                <div className="grid grid-cols-2 gap-8">
+                  <div className="text-center">
+                    <p className="text-3xl font-bold text-[#5A78FF]">150+</p>
                     <p className="text-sm text-muted-foreground">Projects Completed</p>
                   </div>
-                  <div>
-                    <p className="text-3xl font-bold text-[#4FD1C5]">95%</p>
-                    <p className="text-sm text-muted-foreground">Client Satisfaction</p>
+                  <div className="text-center">
+                    <p className="text-3xl font-bold text-[#5A78FF]">98%</p>
+                    <p className="text-sm text-muted-foreground">Client Retention</p>
                   </div>
                 </div>
               </div>
             </div>
             
-            {/* Content column */}
-            <div className="reveal">
-              <p className="text-sm font-medium text-[#AC94F4] mb-2 reveal-item">ABOUT ME</p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 reveal-item">
-                Passionate about digital craftsmanship
+            <div>
+              <p className="text-sm font-medium text-[#5A78FF] uppercase mb-2">About Us</p>
+              <h2 className="text-3xl md:text-5xl font-bold mb-6">
+                We're a team of creative storytellers
               </h2>
               
-              <p className="text-lg text-muted-foreground mb-6 reveal-item">
-                Since 2022, I've been transforming brands through creative digital solutions, helping businesses connect with their audiences in meaningful and impactful ways.
+              <p className="text-lg text-muted-foreground mb-6">
+                BandDigitals is an award-winning creative agency with a passion for designing
+                exceptional digital experiences that drive results and create lasting impressions.
               </p>
               
-              <p className="text-lg text-muted-foreground mb-8 reveal-item">
-                Every project I undertake is driven by a commitment to excellence, strategic thinking, and a deep understanding of what makes digital experiences truly resonate with users.
+              <p className="text-lg text-muted-foreground mb-8">
+                Founded in 2015, our international team combines strategic thinking with creative
+                execution to solve complex marketing challenges for businesses of all sizes.
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                {['Strategic Thinking', 'Creative Solutions', 'Technical Excellence', 'Client-Focused Approach'].map((item, index) => <div key={index} className="flex items-center space-x-2 reveal-item" style={{
-                  transitionDelay: `${index * 100}ms`
-                }}>
-                  <CheckCircle2 className="h-5 w-5 text-[#4FD1C5]" />
-                  <span>{item}</span>
-                </div>)}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-[#5A78FF]/10 flex items-center justify-center">
+                    <CheckCircle2 className="h-5 w-5 text-[#5A78FF]" />
+                  </div>
+                  <span>Strategic Approach</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-[#5A78FF]/10 flex items-center justify-center">
+                    <CheckCircle2 className="h-5 w-5 text-[#5A78FF]" />
+                  </div>
+                  <span>Innovative Design</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-[#5A78FF]/10 flex items-center justify-center">
+                    <CheckCircle2 className="h-5 w-5 text-[#5A78FF]" />
+                  </div>
+                  <span>Results Focused</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-[#5A78FF]/10 flex items-center justify-center">
+                    <CheckCircle2 className="h-5 w-5 text-[#5A78FF]" />
+                  </div>
+                  <span>Client Partnership</span>
+                </div>
               </div>
               
               <Button 
-                className="rounded-full bg-gradient-to-r from-[#4FD1C5] to-[#AC94F4] text-white hover:opacity-90 transform transition-transform hover:scale-105 reveal-item" 
-                size="lg" 
+                className="bg-[#5A78FF] hover:bg-[#4A68EF] text-white rounded-full"
                 onClick={handleContactClick}
               >
-                Contact Me Now
+                Learn More About Us
               </Button>
             </div>
           </div>
@@ -97,61 +109,61 @@ const About: React.FC = () => {
       </section>
       
       {/* Values Section */}
-      <section className="section bg-muted dark:bg-gray-900/30">
+      <section className="py-24 bg-muted/50 dark:bg-gray-900/30">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <p className="text-sm font-medium text-brand-lavender mb-2">MY VALUES</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Principles That Guide My <span className="text-gradient">Work</span>
+            <p className="text-sm font-medium text-[#5A78FF] uppercase mb-2">Our Values</p>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">
+              Principles That Guide Our <span className="text-[#5A78FF]">Work</span>
             </h2>
-            <p className="text-muted-foreground text-lg mb-8">
-              Every project I undertake is shaped by these core values, ensuring exceptional 
-              results that meet both creative standards and business objectives.
+            <p className="text-muted-foreground">
+              At BandDigitals, our core values shape everything we do, from how we collaborate with 
+              clients to how we approach every creative challenge.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-card p-8 rounded-xl border border-border">
-              <div className="bg-brand-lavender/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                <Briefcase className="text-brand-lavender h-6 w-6" />
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm">
+              <div className="w-12 h-12 rounded-lg bg-[#EEF2FF] flex items-center justify-center mb-6">
+                <Briefcase className="text-[#5A78FF] h-6 w-6" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Excellence in Craft</h3>
+              <h3 className="text-xl font-bold mb-4">Excellence in Craft</h3>
               <p className="text-muted-foreground">
-                I'm passionate about creating beautiful, functional designs that exceed expectations. 
-                My commitment to quality means I never settle for "good enough."
+                We're passionate about creating beautiful, functional designs that exceed expectations. 
+                Our commitment to quality means we never settle for "good enough."
               </p>
             </div>
             
-            <div className="bg-card p-8 rounded-xl border border-border">
-              <div className="bg-brand-teal/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                <Award className="text-brand-teal h-6 w-6" />
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm">
+              <div className="w-12 h-12 rounded-lg bg-[#EEF2FF] flex items-center justify-center mb-6">
+                <Award className="text-[#5A78FF] h-6 w-6" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Results-Driven Approach</h3>
+              <h3 className="text-xl font-bold mb-4">Results-Driven Approach</h3>
               <p className="text-muted-foreground">
-                Beyond aesthetics, my work is strategic and purposeful. I focus on creating digital experiences that drive 
-                meaningful business outcomes and deliver measurable results.
+                Design should be beautiful, but also strategic. We focus on creating work that drives real business 
+                results and helps our clients achieve their goals.
               </p>
             </div>
             
-            <div className="bg-card p-8 rounded-xl border border-border">
-              <div className="bg-brand-peach/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                <Users className="text-brand-peach h-6 w-6" />
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm">
+              <div className="w-12 h-12 rounded-lg bg-[#EEF2FF] flex items-center justify-center mb-6">
+                <Users className="text-[#5A78FF] h-6 w-6" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Collaborative Spirit</h3>
+              <h3 className="text-xl font-bold mb-4">Collaborative Spirit</h3>
               <p className="text-muted-foreground">
-                I believe the best work happens when I partner closely with my clients. Your vision and feedback 
-                are essential to my process, creating truly personalized solutions.
+                We believe the best work happens when clients and creators work together as partners. 
+                We listen carefully, communicate clearly, and value your input throughout the process.
               </p>
             </div>
             
-            <div className="bg-card p-8 rounded-xl border border-border">
-              <div className="bg-brand-gold/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                <GraduationCap className="text-brand-gold h-6 w-6" />
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm">
+              <div className="w-12 h-12 rounded-lg bg-[#EEF2FF] flex items-center justify-center mb-6">
+                <GraduationCap className="text-[#5A78FF] h-6 w-6" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Continuous Innovation</h3>
+              <h3 className="text-xl font-bold mb-4">Continuous Learning</h3>
               <p className="text-muted-foreground">
-                The digital landscape evolves rapidly, and so do I. I stay ahead of emerging trends and technologies 
-                to bring fresh, forward-thinking approaches to every project.
+                The digital landscape is always evolving, and so are we. We invest in ongoing education 
+                and stay ahead of industry trends to bring fresh ideas to every project.
               </p>
             </div>
           </div>
@@ -159,15 +171,14 @@ const About: React.FC = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="section bg-gradient-to-r from-brand-navy/10 to-brand-lavender/10">
+      <section className="py-24">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Digital Presence?</h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Let's create something exceptional together that elevates your brand and connects with your audience.
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Start Your Project?</h2>
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Let's create something amazing together. Reach out to discuss how we can help bring your vision to life.
           </p>
           <Button 
-            className="rounded-full bg-gradient-to-r from-[#4FD1C5] to-[#AC94F4] text-white hover:opacity-90" 
-            size="lg"
+            className="rounded-full bg-[#5A78FF] hover:bg-[#4A68EF] text-white"
             onClick={handleContactClick}
           >
             Get in Touch
